@@ -1,10 +1,14 @@
 import React from 'react'
 
-const Form = () => {
+const Form = ({ type, post, setPost, handleSubmit }) => {
     return (
-        <div>
-            Form
-        </div>
+        <section className='w-full max-w-full flex-start flex-col'>
+            <textarea 
+                className='form_textarea'
+                value={post.prompt}
+            >
+            </textarea>
+        </section>
     )
 }
 
